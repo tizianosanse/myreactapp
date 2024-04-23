@@ -6,7 +6,7 @@ function FantasyBooks() {
   return fantasy.map((lib) => {
     console.log(lib);
     return (
-      <Col className="col-3">
+      <Col key={`card-${lib.asin}`} className="col-3">
         <Card>
           <Card.Img variant="top" src={lib.img} />
           <Card.Body>

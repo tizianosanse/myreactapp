@@ -1,7 +1,6 @@
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import fantasy from "../fantasy.json";
-import { Col } from "react-bootstrap";
+import { Badge, Col } from "react-bootstrap";
 
 function FantasyBooks() {
   return fantasy.map((lib) => {
@@ -13,7 +12,9 @@ function FantasyBooks() {
           <Card.Body>
             <Card.Title>{lib.title}</Card.Title>
             <Card.Text>{lib.category}</Card.Text>
-            <Button variant="primary">{lib.price}$</Button>
+            <Badge variant="primary" pill>
+              {lib.price}$
+            </Badge>
           </Card.Body>
         </Card>
       </Col>

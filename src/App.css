@@ -39,3 +39,12 @@
 .horrorCateg {
   color: aliceblue;
 }
+.imgCard {
+  border-radius: 1%;
+}
+.imgCard:hover {
+  transform: scale(1.2);
+}
+.titleFigure {
+  color: #171718;
+}

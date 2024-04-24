@@ -1,20 +1,23 @@
-import { Container, Row } from "react-bootstrap";
-import FantasyBooks from "./FantasyBook";
-import HorrorBooks from "./Horror";
-function AllTheBooks() {
-  return (
-    <Container className="mt-5 d-flex gap-5 ">
-      <Row className="d-flex bg-success">
-        <h1>Fantasy</h1>
-        <FantasyBooks />
-      </Row>
+// import { Container } from "react-bootstrap";
 
-      <Row className="d-flex bg-dark">
-        <h1 className="horrorCateg">Horror</h1>
-        <HorrorBooks />
-      </Row>
-    </Container>
-  );
-}
+// import MangaBooks from "./MangaBook";
+// // import HorrorBooks from "./Horror";
+// function AllTheBooks() {
+//   return (
+//     <>
+//       <Container fluid>
+//         {/* <Row> */}
+//         {/* <Col md={6}> */}
+//         <MangaBooks />
+//         {/* </Col> */}
 
-export default AllTheBooks;
+//         {/* <Col md={6}>
+//           <HorrorBooks />
+//         </Col> */}
+//         {/* </Row> */}
+//       </Container>
+//     </>
+//   );
+// }
+
+// export default AllTheBooks;

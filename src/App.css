@@ -48,3 +48,7 @@
 .titleFigure {
   color: #171718;
 }
+
+.cardX {
+  border: solid 1px red;
+}

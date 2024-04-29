@@ -7,20 +7,25 @@ import MyFooter from "./components/myFooter";
 import Home from "./components/ActionFigure";
 
 import MangaBooks from "./components/MangaBook";
+import Comments from "./components/Comments";
+import { Component } from "react";
 
-function App() {
-  return (
-    <>
-      {" "}
-      <div className="App">
-        <MyNavbar />
-      </div>
-      <Home />
-      {/* <AllTheBooks /> */}
-      <MangaBooks />
-      <MyFooter />
-    </>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+        {" "}
+        <div className="App">
+          <MyNavbar />
+        </div>
+        <Home />
+        {/* <AllTheBooks /> */}
+        <MangaBooks />
+        <Comments />
+        <MyFooter />
+      </>
+    );
+  }
 }
 
 export default App;

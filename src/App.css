@@ -40,7 +40,6 @@
   color: aliceblue;
 }
 .imgCard {
-  border-radius: 1%;
 }
 .imgCard:hover {
   transform: scale(1.2);
@@ -50,5 +49,7 @@
 }
 
 .cardX {
-  border: solid 1px red;
+  border: solid 1px #b60fe9;
+  opacity: 20%;
+  transform: scale(1.2);
 }

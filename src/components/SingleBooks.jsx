@@ -1,16 +1,16 @@
 import { Component } from "react";
 import { Card, Col } from "react-bootstrap";
-import manga from "../manga.json";
+
 class SingleBook extends Component {
   state = {
-    title: manga[0].title,
-    img: manga[0].img,
+    title: this.props.title,
+    img: this.props.src,
     selected: false,
   };
 
   render() {
     return (
-      <Col key={this.key} md={2}>
+      <Col className="imgCard col-6" key={this.key} md={3} lg={2}>
         <Card className={`${this.state.selected ? "cardX" : ""}`}>
           <Card.Img
             src={this.props.src}

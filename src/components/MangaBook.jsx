@@ -6,8 +6,8 @@ import SingleBook from "./SingleBooks";
 class MangaBooks extends Component {
   render() {
     return (
-      <Container>
-        <Row className="bg-dark justify-content-center gap-2">
+      <Container fluid>
+        <Row className="bg-dark justify-content-center gap-2 p-5">
           {manga.map((book) => {
             return (
               <SingleBook key={book.asin} title={book.title} src={book.img} />
